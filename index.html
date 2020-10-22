@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <title>BDDI private joke</title>
+  <link rel="icon" href="./img/PCR3.ico" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <link rel="stylesheet" href="https://use.typekit.net/sdd8dld.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/sdd8dld.css">
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </head>
+
+<body>    
+
+    <div class="slider-content">      
+      <!-- <div class="number-wrapper">
+        <div class="number-count">
+          <div class="number">01</div>
+        </div>
+      </div> -->
+      
+      <div class="nav-wrapper">
+        <div class="nav-arrows">
+          <div class="nav-up">
+               <svg id="arrow-up" style="fill: black;">
+                <use xlink:href="#icon-arrow"></use>
+              </svg>
+           </div>
+          <div class="nav-line"></div>
+          <div class="nav-down">
+             <svg id="arrow-down">
+                <use xlink:href="#icon-arrow">NEXT</use>
+              </svg>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slider-wrapper">
+        <div class="slider-container">                       
+          <div class="slide active" data-order="1">
+              <div class="slide-content txt">
+                <div class="txt-wrapper">
+                  <span class="copy" data-depth="-.2">Sur l'échelle de <strong> Anatole</strong> <br>à combien es-tu éméché ?</span>
+                  <h2 class="percent" style="font-size: 200px;"><span>40%</span>d'Anatole</h2>
+                </div>
+              </div>
+              <div class="slide-content img">
+                <div class="heroImg">
+                    <img src="./img/01.png" style="width: 200% ; margin-left: -92%;"alt="">
+                </div>
+                <div class="leaves"  style="width: 200%;">
+                    <ul id="scene">
+                        <li class="layer" data-depth="-.2">
+                        <img src="./img/01.png" alt="">
+                        </li>
+                        <li class="layer" data-depth="1.5">
+                        <img src="./img/01.png" alt="">
+                        </li>
+                        <li class="layer" data-depth="4">
+                        <img src="./img/01.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+          </div>  
+
+
+          <div class="slide" data-order="2">
+              <div class="slide-content txt" style="margin-left:40%;">
+                <div class="txt-wrapper">
+                  <span class="copy" style="text-align: center;">Comptes-tu devenir un <br> <strong> jeune cadre dynamique </strong><br> comme Valentin ? </span>
+                  <!-- <h2><span>57.9%</span></h2>
+                   <button>OUI</button> -->
+                   <img style="margin-top: 30px;" src="./img/progressBar.png" alt="">
+                </div>
+              </div>
+              <div class="slide-content img" style="height: 90vh;">
+                <img class="valHero" src="./img/02.png" alt="" />
+              </div>
+            </div>  
+
+            <div class="slide PCRcontainer" data-order="3">
+              <div class="slide-content txt" style=" padding-top: 0; width: 100%;"> 
+                <div class="txt-wrapper">
+                  <span class="copy" style="position: relative; margin-top: 5%; z-index: 12;">Part d'étudiants en BBDI ayant été<br> <strong> dépucelé du nez </strong><br>(test PCR)</span>
+                  
+                  <div class="percentNose">
+                    <h2 id="OUI">OUI <br> 57.9%</h2>
+                    <h2 id="NON">NON <br> 42.1%</h2>
+                  </div>
+                  
+                  <div class="pcr">
+                    <img class="TUBE" src="./img/PCR4.png" alt="" />
+                    <img class="FULL" src="./img/PCR3.png" alt="" />
+                    <img id="TIGE" src="./img/PCR2.png" alt="" />
+                    <img class="" src="./img/PCR1.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="slide-content img" style="margin: 0;">
+              </div> -->
+            </div> 
+
+                   
+            
+            <div class="slide " data-order="4">
+                <div class="slide-content img firstTile" style="display: flex; width: 100%; object-fit: none!important;">
+                  
+                  <div id="thierry" style="position: relative; width: 100%;">
+                    <img class="tAudoux" id="tAureole" style="position: fixed; width: 100%;" src="./img/tAudouxO.png" alt="" />
+                    <img class="tAudoux" id="tAudoux" style="position: fixed; width: 100%;" src="./img/tAudoux.png" alt="" />
+                  </div>
+                    <div class="description" style="font-size: 5rem;">
+                      <h2 id="godsPer">59.7%</h2>  
+                      <span class="copy">DES BBDI CROIENT <br> EN <strong  id="godsTxt" > <br>THIERRY AUDOUX </strong></span>
+                    </div>
+                    <div class="tanguy" style="position: relative; width: 100%;">
+                      <img class="rTanguy" id="tAureoleRt" src="./img/rTanguyO.png" alt="" />
+                      <img class="rTanguy" id="rTanguyArm" src="./img/rTanguy_Arm.png" alt="" />
+                      <img class="rTanguy" id="rTanguy"src="./img/rTanguy.png" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide " data-order="5">
+              <div class="slide-content img" style="display: flex; margin-left: 0%!important; width: 100%!important;">
+                <div class="aymeric" id="aymeric">
+                  <img class="rTanguy aymeric" id="rTanguy aymeric"src="./img/aymeric.png"  style="object-fit: none !important; width: 100%!important; height: 85vh;" alt="" />
+                </div>
+                <div class="description" style="font-size: 5rem;">
+                  <h2 id="delPer">45.2%</h2>  
+                  <span class="copy">DES BBDI PENSENT QUE <br> <strong  id="delTxt" > AYMERIC </strong> <br> EST LE <strong id="good"> PIRE</strong> délégué</span>
+                </div>
+                <div class="philippe" id="philippe">
+                  <img class="rTanguy philippe" id="rTanguy"src="./img/phil.png" alt="" />
+                </div>
+              </div>
+          </div>
+
+          <div class="slide DJS" data-order="6">
+            <span class="slide-content img titleDJS">Elections du  <strong>meilleur DJ</strong> de BDDI</span>  
+            <div class="slide-content img" style="display: flex; margin-left: 0%!important; width: 100%!important;">
+              <div class="aymeric" id="aymeric">
+                <img class="rTanguy aymeric" id="rTanguy aymeric"src="./img/zaklo.png"  style="object-fit: none !important; width: 100%!important; height: 85vh;" alt="" />
+              </div>
+              <div class="philippe" id="philippe" style="display: block!important;" onclick="playAudio('sound/DJAY.mp3')">
+                <!-- <img class="rTanguy philippe DJAYhands" id="rTanguy"src="./img/DJAYhands.png" /> -->
+                <img class="rTanguy philippe DJAY" id="rTanguy"src="./img/DJAYfull.png" />
+              </div>
+              <div class="pample" id="pample">
+                <img class="rTanguy pample" id="rTanguy"src="./img/pamplegooze.png"/>
+              </div>
+            </div>
+        </div>
+
+        <div class="slide " data-order="7">
+          <div class="slide-content img" style="display: flex; margin-left: 0%!important; width: 100%!important;">
+            <div class="aymeric" id="aymeric">
+              <img class="rTanguy aymeric" id="rTanguy aymeric"src="./img/aymeric.png"  style="object-fit: none !important; width: 100%!important; height: 85vh;" alt="" />
+            </div>
+            <div class="description" style="font-size: 5rem;">
+              <h2 id="delPer">53.3%</h2>  
+              <span class="copy">DES BDDI<br>CONFONDENT LE RIRE <br>DE ROBIN AVEC UN <br> <strong id="good"> MOTEUR DE 4L</strong></span>
+            </div>
+            <div class="philippe" id="philippe">
+              <img class="rTanguy philippe" id="rTanguy"src="./img/r4L.png" alt="" />
+              <img class="rTanguy philippe r4L" id="rTanguy"src="./img/4L.png" alt="" />
+            </div>
+          </div>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+<script src="./js/tweenmax.js"></script>
+<script src="./js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script> 
+
+ 
+</body>
+</html>
